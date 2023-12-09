@@ -1,0 +1,100 @@
+.card {
+  padding: 2rem 1.9rem;
+  max-width: 471px;
+  border-radius: 12% 12% 30% 12%;
+  background-color: $white;
+  .card-form {
+    display: flex;
+    gap: 12px;
+    padding: 1rem .5rem;
+  }
+
+  .card-form--input {
+    p {
+      margin: 0;
+      color: $smokey-grey;
+      font-weight: bold;
+      letter-spacing: 3px;
+      font-size: 12px;
+      margin-bottom: 10px;
+    }
+    input {
+      border: 1px solid $light-grey;
+      border-radius: 5px;
+      padding: 1rem  .5rem;
+      font-weight: bolder;
+      font-size: 20px;
+      transition: border .5s;
+      &:focus {
+        border: 1px solid $purple;
+      }
+    }
+    
+  }
+  .card-divider{
+    position: relative;
+    border-top: 1px solid $light-grey;
+    margin: 2rem 0;
+    .card-divider--btn{
+      width: 60px;
+      background-color: $purple;
+      position: absolute;
+      padding: .9rem;
+      border-radius: 50%;
+      border: 0;
+      top: 50%;
+      left:50%;
+      transform: translate(-50%, -50%);
+      
+      img{ 
+        width: 100%;
+        margin: auto;
+        object-fit: contain;
+      }
+    }
+
+  }
+  .card-result {
+    padding: 1rem 0;
+    font-style: italic;
+    .card-result--date {
+      p {
+        font-size: 40px;
+        margin: 0;
+        font-weight: bold;
+      }
+
+      span {
+        color: $purple;
+        margin-right: 6px;
+      }
+
+    }
+
+  }
+
+}
+
+@media screen and (min-width: 768px) {
+  .card {
+    .card-form{
+      width: 80%;
+    }
+    .card-divider {
+      width: 90%;
+      margin: 2rem 12px ;
+      .card-divider--btn {
+        transform: translate(300%, -50%);
+      }
+
+    }
+    .card-result {
+      .card-result--date{
+        p{
+          font-size: 3.5rem;
+        }
+      }
+    }
+
+  }
+}

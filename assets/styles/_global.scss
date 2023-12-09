@@ -1,0 +1,41 @@
+@use 'normalize';
+
+input, button {
+  width: 100%;
+  box-sizing: border-box; /* add this */
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+}
+input:focus,
+textarea:focus,
+select:focus,
+a:focus {
+  outline: none;
+}
+
+
+// COLORS
+$purple: hsl(259, 100%, 65%);
+$light-red: hsl(0, 100%, 67%);
+$white: hsl(0, 0%, 100%);
+$off-white: hsl(0, 0%, 94%);
+$light-grey: hsl(0, 0%, 86%);
+$smokey-grey: hsl(0, 1%, 44%);
+$off-black: hsl(0, 0%, 8%);
+
+//Fonts
+@font-face {
+  font-family: 'Poppins';
+  src: url('../fonts/Poppins-Regular.ttf');
+}
+
+html {
+  font-family: 'Poppins';
+}
+
+//Font sizes
+$input-font-size: 32px;
+
+
+
+
